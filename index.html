@@ -10,56 +10,55 @@
 </head>
 
 <body>
-    
-    <section class="hero">
-        <div class="hero__wrapper">
-        <div class="hero__swiper swiper">
-            <!-- Additional required wrapper -->
-            <ul class="hero__list swiper-wrapper">
-                <!-- Slides -->
-                <li class="hero__item swiper-slide"><a href="#"><img class="hero__img" src="./img/hotel-1.jpg"
-                            alt=""></a></li>
-                <li class="hero__item swiper-slide"><a href="#"><img class="hero__img" src="./img/hotel-2.jpg"
-                            alt=""></a></li>
-                <li class="hero__item swiper-slide"><a href="#"><img class="hero__img" src="./img/hotel-3.jpg"
-                            alt=""></a></li>
+    <div class="page__container">
+        <section class="hero">
+            <div class="hero__wrapper">
+            <div class="hero__swiper swiper">
+                <!-- Additional required wrapper -->
+                <ul class="hero__list swiper-wrapper">
+                    <!-- Slides -->
+                    <li class="hero__item swiper-slide">
+                      <a href="#"><img class="hero__img" src="./img/hotel-1.jpg" alt=""></a>
+                    </li>
+                    <li class="hero__item swiper-slide">
+                      <a href="#"><img class="hero__img" src="./img/hotel-2.jpg"alt=""></a>
+                    </li>
+                    <li class="hero__item swiper-slide">
+                      <a href="#"><img class="hero__img" src="./img/hotel-3.jpg"alt=""></a>
+                    </li>
+                </ul>
 
-            </ul>
 
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </div>
-    </section>
-
-    <section class="calculator">
-        <div class="calculator__wrapper">
-            <div class="calculator-field-container">
-                <select class="calculator_field deposit_type_field" name="deposit_type" id="">
-                    <option value="refill">пополняемый</option>
-                    <option value="express">срочный</option>
-                </select>
-
-                <select class="calculator_field deposit_period_field" name="deposit_period" id="">
-                    <option>Срок вклада</option>
-                    
-                </select>
-
-                <label class="calculator_field" for="">
-                    <input class="price_field" type="text" name="price" placeholder="Сумма, руб">
-                </label>
-
-                <button class="submit_button">Рассчитать</button>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-
-
-            <div class="text_output"></div>
-
         </div>
-    </section>
+        </section>
 
+        <section class="calculator">
+            <div class="calculator__wrapper">
+                <div class="calculator-field-container">
+                    <select class="calculator_field deposit_type_field" name="deposit_type" id="">
+                        <option value="refill">пополняемый</option>
+                        <option value="express">срочный</option>
+                    </select>
+
+                    <select class="calculator_field deposit_period_field" name="deposit_period" id="">
+                        <option>Срок вклада</option>
+
+                    </select>
+
+
+                    <input class="price_field" type="text" name="price" placeholder="Сумма, руб">
+
+
+                    <button class="submit_button">Рассчитать</button>
+                </div>
+                <div class="text_output"></div>
+            </div>
+        </section>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
